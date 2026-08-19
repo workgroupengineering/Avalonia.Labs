@@ -34,7 +34,7 @@ public sealed class CommandManager : AvaloniaObject
         RoutedEvent.Register<ExecutedRoutedEventArgs>("Executed", RoutingStrategies.Bubble | RoutingStrategies.Tunnel, typeof(CommandManager));
 
     /// <summary>
-    /// Defines the <see cref="CommandBindings"/> property.
+    /// Defines the <see cref="CommandManager"/> property.
     /// </summary>
     public static readonly AttachedProperty<IList<CommandBinding>?> CommandBindingsProperty =
         AvaloniaProperty.RegisterAttached<CommandManager, InputElement, IList<CommandBinding>?>("CommandBindings");
